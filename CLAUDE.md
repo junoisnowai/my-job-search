@@ -1,12 +1,12 @@
 # Job Application Assistant for Sayed Johon
 
 ## Role
-This repo is an autonomous job application workspace for **Sayed Johon** (Legal/Academic Name: **Hamim Ahmed**), helping with:
-1. **Job fit evaluation** - Assess job postings against your technical automation & media superpower profile
-2. **CV tailoring** - Adapt moderncv LaTeX templates targeting AI Engineer, Automation, and Full-Stack roles
-3. **Cover letter writing** - Draft persuasive, high-converting cover letters (XeLaTeX)
-4. **Interview preparation** - Roleplay technical and behavioral interviews
-5. **Career strategy** - Advice on market positioning for Bangladeshi tech hubs and global remote teams
+This repo is an autonomous job application workspace for **Sayed Johon** (Academic/Legal Name: **Hamim Ahmed**), helping with:
+1. **Segmented Job Fit Evaluation** - Match job postings to the right Persona Track (AI Engineer, Media Director, Growth/Marketing, or Startup Lead).
+2. **Surgical CV Tailoring** - Adapt LaTeX moderncv templates targeting the specific role without dumping unrelated skills.
+3. **Persuasive Cover Letters** - Draft high-converting cover letters (XeLaTeX) tailored to the company's culture.
+4. **Interview Preparation** - Roleplay technical and behavioral interviews.
+5. **Career Strategy** - Advice on market positioning for Bangladeshi tech hubs and global remote teams.
 
 ---
 
@@ -23,41 +23,36 @@ This repo is an autonomous job application workspace for **Sayed Johon** (Legal/
   |----------|-------|
   | English | Fluent (Professional On-Camera Host / Presenter) |
   | Bengali | Native |
-- **CV language:** English
+- **CV Language:** English
 - **LinkedIn Headline:** "AI Systems & Automation Engineer | Founder at MicTab & PeeAI | Host @JunoVerseAI"
 - **Master Bio Source of Truth:** [`.agents/sayed_johon_master_bio.md`](../.agents/sayed_johon_master_bio.md)
 
 ---
 
-### Key Platforms & Portfolios
-- **YouTube Channel:** [JunoverseAI (@JunoVerseAI)](https://www.youtube.com/@JunoVerseAI) — Tech host, AI tutorials, deep-dives & product reviews
+## 🎭 The 4 Segmented Persona Tracks (Surgical Targeting)
+
+🚨 **MANDATORY RULE**: NEVER tell everything to everyone. Select the single best track for each job posting:
+
+### Track A: AI Systems & Automation Engineer
+- **For**: AI Engineer, Automation Specialist, Backend/Python Developer, RAG Engineer.
+- **Highlights**: JARVIS Autonomous Media OS, OmniVoice 10-GPU Colab Swarm, n8n multi-stage workflows, Linux 24/7 daemons, Docker, FastAPI, Python.
+
+### Track B: Media Production & Video Director
+- **For**: Video Producer, Creative Director, YouTube Channel Manager, Cinematographer, Content Creator.
+- **Highlights**: Host of JunoverseAI YouTube channel, cinematography & wildlife photography heritage, camera optics/lighting, high-retention video hooks, EBU R128 (-14 LUFS) broadcast audio normalization, AI-accelerated production pipelines.
+
+### Track C: Growth Marketing, Copywriting & Publishing
+- **For**: Growth Marketer, Content Strategist, Copywriter, Amazon/Digital Publishing Specialist.
+- **Highlights**: Psychological copywriting, hook pacing, conversion rate optimization (CRO), Amazon KDP publishing workflows, multi-platform organic distribution (YouTube, LinkedIn, 𝕏, Facebook).
+
+### Track D: Technical Generalist / Startup Lead
+- **For**: Technical Product Lead, Operations Lead, Founder's Associate, Agency Automation Lead.
+- **Highlights**: Founder of MicTab.com & PeeAI.com, instant business automation with n8n + AI agents, fluent English communication, full-lifecycle product ownership.
+
+---
+
+## Key Portfolios & Links
+- **YouTube:** [JunoverseAI (@JunoVerseAI)](https://www.youtube.com/@JunoVerseAI)
 - **LinkedIn:** [linkedin.com/in/sayedjohon](https://www.linkedin.com/in/sayedjohon/)
 - **GitHub:** [github.com/junoisnowai](https://github.com/junoisnowai) & [github.com/sayedjohonedu](https://github.com/sayedjohonedu)
-- **Live Products:** [PeeAI.com](https://www.peeai.com), [MicTab.com](https://www.mictab.com), [JunoverseAI.com](https://www.junoverseai.com)
-
----
-
-### Professional Experience & Ventures Founded
-
-- **Founder & Lead AI Engineer** (2024 - Present) - **JunoverseAI & MicTab** (Dhaka, Bangladesh)
-  - Engineered **JARVIS Autonomous Media OS**: An end-to-end multi-agent publishing studio combining Playwright browser capture, Vertex AI (Gemini 3.7 / Nano Banana 2), neural TTS, and automated multi-platform distribution (YouTube, LinkedIn, 𝕏).
-  - Architected **OmniVoice**: Serverless cloned voice TTS system with a 10-account Google Colab GPU failover swarm (160GB VRAM) and GCP Cloud Run endpoints.
-  - Built full-scale RAG and automation pipelines with **n8n**, Python, and FastAPI, automating business operations and content publishing.
-
-- **Host & Technical Creator** (2024 - Present) - **JunoverseAI YouTube Channel**
-  - Hosted, scripted, and produced dozens of deep-dive videos on AI agents, LLM architectures, and developer tools in fluent English.
-  - Mastered audience retention, high-CTR thumbnail design (Gaussian frosted glass, Vertex AI photorealism), and technical storytelling.
-
----
-
-### Technical Arsenal
-- **AI & LLM Orchestration:** Agentic Systems (Claude Code, Antigravity, Hermes), Google Vertex AI (Gemini 3.7 Flash, Nano Banana 2), OpenAI APIs, Groq Whisper Large v3, RAG Architectures, Vector Search.
-- **Workflow & Business Automation:** n8n Workflow Automation, Webhook Integrations, Headless Playwright, OpenCLI Scraping Daemons, Social Auto-Posters.
-- **DevOps & Infrastructure:** Linux Ubuntu 22.04 LTS Administration, 24/7 Systemd Daemons, Docker, Google Cloud Run, Cloud Build, Artifact Registry, Tailscale Mesh.
-- **Languages & Frameworks:** Python (FastAPI, Asyncio), JavaScript/TypeScript (Node.js, Bun), Bash, HTML/CSS.
-- **Media & Creative:** Video Editing, Audio Engineering (-14 LUFS Broadcast Normalization), Motion Graphics, Copywriting & Persuasion Psychology.
-
----
-
-### Strategic Narrative (For ATS & Recruiters)
-- Frame Sayed Johon as a **high-leverage builder and technical operator** who combines deep AI automation engineering with exceptional on-camera communication, marketing psychology, and rapid prototyping capabilities.
+- **Live Platforms:** [PeeAI.com](https://www.peeai.com), [MicTab.com](https://www.mictab.com), [JunoverseAI.com](https://www.junoverseai.com)
