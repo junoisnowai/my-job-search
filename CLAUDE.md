@@ -1,42 +1,44 @@
 # Job Application Assistant for Hamim Ahmed (Sayed Johon)
 
 ## Role
-This repo is an autonomous job application workspace for **Hamim Ahmed** (Public/Brand Name: **Sayed Johon**), helping with:
-1. **Dynamic Job Fit Evaluation** - Match job postings to the right Persona Track with appropriate weighting.
-2. **Surgical CV Tailoring** - Adapt LaTeX moderncv templates targeting the specific role without dumping unrelated skills.
-3. **Persuasive Cover Letters** - Draft high-converting cover letters (XeLaTeX) tailored to the company's culture.
-4. **Interview Preparation** - Roleplay technical and behavioral interviews.
-5. **Career Strategy** - Advice on market positioning for Bangladeshi tech hubs and global remote teams.
+This repo is an autonomous job application workspace for **Hamim Ahmed** (Public/Brand Name: **Sayed Johon**), specialized in:
+1. **Creative Direction & Commercial Video Production** (Cinematography, Photography, Video Editing, DaVinci Resolve, Adobe Creative Suite).
+2. **Scriptwriting, Storytelling & Hook Engineering** (3-Second Hooks, Audience Retention, Consumer Psychology, High-CTR Thumbnail Design).
+3. **Business AI Implementation & Offline Automation** (Integrating AI tools into companies, offline/local AI deployment, operational streamlining).
+4. **Social Media Growth & Multi-Device Workflows** (Multi-channel social automation, device matrix testing/distribution, YouTube growth, Ad agency creative strategy).
+
+> 🚨 **CRITICAL IDENTITY MANDATE**:
+> - **Hamim Ahmed is NOT a software/backend developer** (Zero Python coding, Zero backend database engineering).
+> - **Hamim Ahmed IS a high-impact Content Creator, On-Camera Host, Creative Director, Vibe Coder, and Business AI Automation Strategist**.
+> - NEVER target pure backend/software developer roles. Target **Creative Lead, Video Producer, Content Strategist, AI Implementation Specialist, Social Media Growth Lead, or Agency Partner** roles.
 
 ---
 
 ## 🌟 The Universal Anchor (Included on EVERY Application)
 No matter what role is targeted, **always establish these foundational proof points**:
 1. **On-Camera Technical Host & Storyteller**: Face and voice of **JunoverseAI** on YouTube (`@JunoVerseAI`).
-2. **Live Production Platforms**: Founder/Architect of [JunoverseAI.com](https://junoverseai.com), [MicTab.com](https://mictab.com), and [PeeAI.com](https://peeai.com).
-3. **Fluency with Modern AI & Automation**: Establishes Hamim as a 10x force multiplier who works faster and smarter than traditional applicants.
+2. **Live Production Platforms**: Founder/Creator behind [JunoverseAI.com](https://junoverseai.com), [MicTab.com](https://mictab.com), and [PeeAI.com](https://peeai.com).
+3. **Business AI & Automation Power**: Solves business bottlenecks by deploying AI workflows and multi-device distribution systems.
 
 ---
 
-## 🎭 Dynamic Weighting Rules per Job Type
+## 🎭 The 4 Refined Persona Tracks
 
-### 🎨 Track 1: Media, Advertising, Video & Directing Roles
-- **Weight**: **80% Creative Direction & Cinematography** + **20% AI Automation Superpower**.
-- **Lead With**: Canon 5D Mark III + 70-200mm f/2.8L, commercial directing, 3-second hook craft, DaVinci Resolve, Adobe Premiere Pro, After Effects, Photoshop, documentary research.
-- **AI Secondary Touch**: Framed as *"Uses modern AI workflows and automation tools to storyboard, edit, and scale content production at 5x normal speed"*.
+### 🎨 Track 1: Creative Director & Commercial Video Lead
+- **Target Roles**: Creative Director, Video Producer, Commercial Videographer, Lead Video Editor, YouTube Studio Manager.
+- **Lead With**: Canon 5D Mark III + 70-200mm f/2.8L, commercial video ads, photography, product staging, DaVinci Resolve, Adobe Premiere Pro, After Effects, Photoshop, documentary research.
 
-### 🤖 Track 2: AI Engineering, Automation & Backend Roles
-- **Weight**: **80% Architecture, Code & Pipelines** + **20% On-Camera Communication Superpower**.
-- **Lead With**: MicTab desktop voice engine, AutometaBot RAG support (`pgvector` + Cloudflare Workers), n8n enterprise workflows, Python (FastAPI), Docker, Linux daemons.
-- **Media Secondary Touch**: Framed as *"Rare technical architect who can present complex systems on camera in fluent English and communicate cross-functionally"*.
+### 🤖 Track 2: Business AI Implementation & Offline Automation Specialist
+- **Target Roles**: AI Implementation Consultant, Business Automation Specialist, AI Workflow Strategist, Digital Transformation Partner.
+- **Lead With**: Implementing AI into businesses, setting up local/offline AI tools, no-code/low-code workflow automation, AutometaBot social CRM, MicTab creator workflows, and training teams to 10x output.
 
-### 📈 Track 3: Growth Marketing, Social Ads & Copywriting Roles
-- **Weight**: **80% Audience Psychology & Hook Craft** + **20% Automated Campaign Scaling**.
-- **Lead With**: Viewer psychology, hook engineering, retention curve optimization, AutometaBot social DM/comment automation, Amazon KDP publishing, and Conversion Rate Optimization (CRO).
+### 📈 Track 3: Social Media Growth, Scriptwriting & Viral Content Lead
+- **Target Roles**: Growth Marketer, Content Strategist, Viral Scriptwriter, Social Media Manager, Ad Creative Lead.
+- **Lead With**: 3-second hook engineering, viewer psychology, retention curve optimization, multi-account device matrix scaling, and Amazon KDP publishing.
 
-### 🚀 Track 4: Founder's Associate, Operations & Product Leads
-- **Weight**: **50% Full-Stack Product Delivery (MicTab, PeeAI)** + **50% Media, Marketing & English Presenting**.
-- **Lead With**: Full 0-to-1 execution across product architecture, automation, brand identity, and video demonstrations.
+### 🚀 Track 4: Creator Partner & Agency Growth Lead
+- **Target Roles**: Agency Creative Lead, Founder's Growth Partner, Product Launch Specialist.
+- **Lead With**: End-to-end execution combining on-camera video demonstrations, brand identity, visual assets, and AI-accelerated distribution.
 
 ---
 
