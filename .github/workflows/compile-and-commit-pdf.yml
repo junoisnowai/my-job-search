@@ -1,0 +1,67 @@
+name: Compile LaTeX CV & Cover Letters
+
+on:
+  push:
+    paths:
+      - 'cv/**/*.tex'
+      - 'cover_letters/**/*.tex'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compile-pdfs:
+    name: Compile All LaTeX Documents to PDF
+    runs-on: ubuntu-latest
+    container: texlive/texlive:latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install poppler utilities
+        run: |
+          apt-get update -qq
+          apt-get install -y -qq poppler-utils git
+
+      - name: Compile CVs (lualatex)
+        run: |
+          cd cv
+          for f in *.tex; do
+            if [ -f "$f" ]; then
+              echo "📄 Compiling CV: $f"
+              lualatex -interaction=nonstopmode "$f" || echo "⚠️ Warning on $f"
+            fi
+          done
+
+      - name: Compile Cover Letters (xelatex)
+        run: |
+          cd cover_letters
+          for f in *.tex; do
+            if [ -f "$f" ]; then
+              echo "📝 Compiling Cover Letter: $f"
+              xelatex -interaction=nonstopmode "$f" || echo "⚠️ Warning on $f"
+            fi
+          done
+
+      - name: Upload PDF Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: compiled-application-pdfs
+          path: |
+            cv/*.pdf
+            cover_letters/*.pdf
+
+      - name: Auto-Commit & Push Generated PDFs
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "action@github.com"
+          git add -f cv/*.pdf cover_letters/*.pdf 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No PDF changes to commit."
+          else
+            git commit -m "🤖 Auto-compiled PDFs from latest LaTeX templates [skip ci]"
+            git push
+          fi
