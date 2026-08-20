@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-// BDJobs Search CLI for Hamim Ahmed (Sayed Johon)
+// BDJobs Enterprise Search & Research CLI for Hamim Ahmed (Sayed Johon)
 // Queries the remote BDJobs API microservice hosted on Linux (joe@100.86.193.4:19828)
 
 import { runSearch, type SearchOpts } from "./commands/search.js"
@@ -17,6 +17,7 @@ const ALIAS: Record<string, string> = {
   l: "location",
   n: "limit",
   p: "page",
+  s: "sort",
 }
 
 function parseFlags(argv: string[]): Flags {
@@ -40,28 +41,29 @@ function parseFlags(argv: string[]): Flags {
   return flags
 }
 
-const HELP = `bdjobs-search-cli — search BDjobs.com via the Linux microservice
+const HELP = `bdjobs-search-cli — search BDjobs.com with deep contact extraction & persona matching
 
 USAGE
   bun run src/cli.ts search [-q "<keywords>"] [-c "<category>"] [-l "<location>"] [--format json|table|plain]
   bun run src/cli.ts detail <id|url> [--format json|plain]
 
 SEARCH FLAGS
-  --query, -q <text>       Keywords (e.g. "python", "video", "marketing")
-  --category, -c <name>    Category alias (it, media, marketing, creative, etc.)
+  --query, -q <text>       Keywords (e.g. "python", "video editor", "growth marketing")
+  --category, -c <name>    Category alias (it, media, video, creative, marketing, management)
   --location, -l <text>    Location (Dhaka, Chittagong, Remote, etc.)
-  --jobage <days>          Posted within N days
+  --jobage <days>          Posted within N days (1 for last 24h, 7 for last week)
+  --sort, -s <mode>        Sort by: latest (default) | match | deadline
   --limit, -n <n>          Number of results (default 20, max 50)
   --page, -p <n>           Page number (1-indexed)
   --format <fmt>           json (default) | table | plain
 
-DETAIL
-  <id|url>                 BDjobs Job ID or full job details URL
+DETAIL / RESEARCH
+  <id|url>                 BDjobs Job ID or full job details URL (extracts direct emails & requirements)
 
 EXAMPLES
   bun run src/cli.ts search -q "python" -c "it" --limit 10 --format table
-  bun run src/cli.ts search -q "video editor" -c "media" --format table
-  bun run src/cli.ts detail 1522795 --format plain
+  bun run src/cli.ts search -q "video" -c "media" --sort match --format table
+  bun run src/cli.ts detail 1523323 --format plain
 
 Microservice endpoint: ${DEFAULT_API_URL}
 `
@@ -78,6 +80,7 @@ async function main(): Promise<number> {
 
   if (cmd === "search") {
     const fmt = (flags.format as string) || "json"
+    const sortVal = (flags.sort as string) || "latest"
     const opts: SearchOpts = {
       query: typeof flags.query === "string" ? flags.query : undefined,
       category: typeof flags.category === "string" ? flags.category : undefined,
@@ -85,6 +88,7 @@ async function main(): Promise<number> {
       limit: flags.limit ? parseInt(flags.limit as string, 10) : 20,
       page: flags.page ? parseInt(flags.page as string, 10) : 1,
       jobage: flags.jobage ? parseInt(flags.jobage as string, 10) : undefined,
+      sort: (["latest", "match", "deadline"].includes(sortVal) ? sortVal : "latest") as SearchOpts["sort"],
       format: (["json", "table", "plain"].includes(fmt) ? fmt : "json") as SearchOpts["format"],
     }
     return runSearch(opts)

@@ -1,4 +1,4 @@
-import { DEFAULT_API_URL, formatPlain, writeError, type JobDetail } from "../helpers.js"
+import { DEFAULT_API_URL, formatPlainDossier, writeError, type JobDossier } from "../helpers.js"
 
 export interface DetailOpts {
   id: string
@@ -6,9 +6,8 @@ export interface DetailOpts {
 }
 
 export async function runDetail(opts: DetailOpts): Promise<number> {
-  // Extract ID if a full URL was passed
   let jobId = opts.id
-  const match = opts.id.match(/(?:details\/|id=)(\d+)/)
+  const match = opts.id.match(/(?:details\/|id=)?(\d+)/)
   if (match) {
     jobId = match[1]
   }
@@ -31,12 +30,12 @@ export async function runDetail(opts: DetailOpts): Promise<number> {
       return 1
     }
 
-    const detail = await res.json() as JobDetail
+    const dossier = await res.json() as JobDossier
 
     if (opts.format === "json") {
-      process.stdout.write(JSON.stringify(detail, null, 2) + "\n")
+      process.stdout.write(JSON.stringify(dossier, null, 2) + "\n")
     } else {
-      formatPlain(detail)
+      formatPlainDossier(dossier)
     }
     return 0
   } catch (e) {

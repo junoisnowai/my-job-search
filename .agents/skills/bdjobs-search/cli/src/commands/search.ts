@@ -7,6 +7,7 @@ export interface SearchOpts {
   limit: number
   page: number
   jobage?: number
+  sort?: "latest" | "match" | "deadline"
   format: "json" | "table" | "plain"
 }
 
@@ -18,6 +19,7 @@ export async function runSearch(opts: SearchOpts): Promise<number> {
   url.searchParams.set("limit", String(opts.limit))
   url.searchParams.set("page", String(opts.page))
   if (opts.jobage) url.searchParams.set("jobage", String(opts.jobage))
+  if (opts.sort) url.searchParams.set("sort", opts.sort)
 
   try {
     const res = await fetch(url.toString(), {
@@ -39,9 +41,10 @@ export async function runSearch(opts: SearchOpts): Promise<number> {
       formatTable(results)
     } else {
       for (const j of results) {
-        console.log(`\n[${j.id}] ${j.title} @ ${j.company}`)
-        console.log(`  📍 Location: ${j.location} | 💰 Salary: ${j.salary || 'Not disclosed'}`)
+        console.log(`\n[${j.id}] ${j.title} @ ${j.company} (Match: ${j.matchScore}%)`)
+        console.log(`  📍 Location: ${j.location} | 💰 Salary: ${j.salary || 'Negotiable'}`)
         console.log(`  ⏰ Deadline: ${j.deadline} | 🎯 Track: ${j.personaTrack}`)
+        if (j.featuredProject) console.log(`  ⭐ Match Highlight: ${j.featuredProject}`)
         console.log(`  🔗 ${j.url}`)
       }
     }
