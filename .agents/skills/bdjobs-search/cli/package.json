@@ -1,0 +1,12 @@
+{
+  "name": "bdjobs-search-cli",
+  "version": "1.0.0",
+  "description": "CLI for searching BDjobs.com via the Linux microservice",
+  "type": "module",
+  "main": "src/cli.ts",
+  "scripts": {
+    "search": "bun run src/cli.ts search",
+    "detail": "bun run src/cli.ts detail"
+  },
+  "dependencies": {}
+}

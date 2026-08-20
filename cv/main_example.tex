@@ -15,12 +15,23 @@
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
+\usepackage{needspace}
+
+% ==============================================================================
+%     PDF METADATA & AI EMBEDDING OPTIMIZATION (Dublin Core Standards)
+%     LLM parsers and ATS indexers prioritize embedded document metadata!
+% ==============================================================================
 \AtEndPreamble{\hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={Hamim Ahmed (Sayed Johon) - CV},
+    pdftitle={Hamim Ahmed (Sayed Johon) - Media Director & AI Automation Engineer},
+    pdfauthor={Hamim Ahmed (Sayed Johon)},
+    pdfsubject={Curriculum Vitae of Hamim Ahmed - Media Director, Video Producer, AI Automation Engineer, and Technical Founder},
+    pdfkeywords={Media Director, Video Producer, Cinematography, DaVinci Resolve, Adobe Premiere Pro, After Effects, Scriptwriting, Audience Psychology, YouTube Host, Canon 5D Mark III, 70-200mm f/2.8, AI Engineer, LLM Orchestration, RAG Systems, n8n Automation, Python, FastAPI, Supabase pgvector, Cloudflare Workers, Electron, Desktop Applications, MICT, Philosophy Logic, Dhaka, Bangladesh},
+    pdfcreator={LaTeX with moderncv},
+    pdfproducer={LuaLaTeX},
     pdfpagemode=UseNone,
 }}
 \usepackage[scale=0.84, top=1.3cm, bottom=1.3cm]{geometry}
@@ -87,6 +98,7 @@
 % ==============================================================================
 \section{Ventures \& Software Engineering}
 
+\needspace{6\baselineskip}
 \cventry{2024 -- Present}{Founder \& Lead AI Architect}{JunoverseAI \& MicTab Platforms}{Dhaka, Bangladesh}{}{
 \begin{itemize}[leftmargin=1.2em, itemsep=2pt]
   \item \textbf{MicTab Desktop Ecosystem (\href{https://mictab.com}{MicTab.com}):} Designed and shipped a cross-platform desktop application (Electron, Node.js) featuring a drag-and-drop Voice Agent Pipeline Engine (\texttt{AgentPipelineEngine}), real-time Whisper STT dictation, and the Lens precision screen annotation suite.
@@ -100,6 +112,7 @@
 % ==============================================================================
 \section{Education \& Academic Credentials}
 
+\needspace{4\baselineskip}
 \cventry{2022 -- 2024}{Master of Information \& Communication Technology (MICT)}{Islamic University (IU)}{Kushtia, Bangladesh}{}{
 \begin{itemize}[leftmargin=1.2em, itemsep=1pt]
   \item Department of Information and Communication Technology (Evening Program) ~|~ \textbf{CGPA: 3.00 / 4.00}
@@ -108,6 +121,7 @@
 }
 
 \vspace{0.2em}
+\needspace{4\baselineskip}
 \cventry{2016 -- 2020}{Bachelor of Arts (Honours) in Philosophy}{Kushtia Govt. College (National University)}{Kushtia, Bangladesh}{}{
 \begin{itemize}[leftmargin=1.2em, itemsep=1pt]
   \item Major in Philosophy ~|~ \textbf{CGPA: 2.78 / 4.00}
