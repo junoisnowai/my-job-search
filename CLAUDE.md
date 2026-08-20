@@ -35,11 +35,11 @@ This repo is an autonomous job application workspace for **Sayed Johon** (Academ
 
 ### Track A: AI Systems & Automation Engineer
 - **For**: AI Engineer, Automation Specialist, Backend/Python Developer, RAG Engineer.
-- **Highlights**: JARVIS Autonomous Media OS, OmniVoice 10-GPU Colab Swarm, n8n multi-stage workflows, Linux 24/7 daemons, Docker, FastAPI, Python.
+- **Highlights**: Enterprise n8n workflows, RAG pipelines, FastAPI backends, Docker, Python, Linux server administration, Multi-Agent Orchestration.
 
 ### Track B: Media Production & Video Director
 - **For**: Video Producer, Creative Director, YouTube Channel Manager, Cinematographer, Content Creator.
-- **Highlights**: Host of JunoverseAI YouTube channel, cinematography & wildlife photography heritage, camera optics/lighting, high-retention video hooks, EBU R128 (-14 LUFS) broadcast audio normalization, AI-accelerated production pipelines.
+- **Highlights**: Host of JunoverseAI YouTube channel, cinematography & wildlife photography heritage, camera optics/lighting, high-retention video hooks, DaVinci Resolve, Adobe Premiere Pro, After Effects.
 
 ### Track C: Growth Marketing, Copywriting & Publishing
 - **For**: Growth Marketer, Content Strategist, Copywriter, Amazon/Digital Publishing Specialist.
