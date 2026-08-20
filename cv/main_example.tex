@@ -1,183 +1,91 @@
-%% Example CV - [YOUR_NAME]
-%% Comprehensive overview of all competencies, experience, and achievements.
-%% Use as a master reference when tailoring role-specific CVs.
-%%
-%% SETUP: Run /setup to populate this with your actual information.
-%% Compile with: lualatex main_example.tex
-%% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
+%% Master CV - Sayed Johon
+%% AI Systems & Automation Engineer | Founder & Tech Host
 
 \documentclass[11pt,a4paper,sans]{moderncv}
 \moderncvstyle{banking}
 \moderncvcolor{blue}
 
-% Force the name and section headings to render in moderncv blue (color1).
-% Default banking leaves them black: moderncvstylebanking.sty's \colorlet
-% copies (not aliases) the pre-scheme accent colour, so the name colours are
-% frozen before \moderncvcolor runs. Re-let them after. \namefont is the hook
-% every name-style macro routes through, so this also works on moderncv 2.3.1
-% (Debian/Ubuntu apt), which has no \firstnamestyle/\lastnamestyle at all.
-\renewcommand*{\namefont}{\fontsize{34}{36}\bfseries\upshape}
+\renewcommand*{\namefont}{\fontsize{30}{32}\bfseries\upshape}
 \colorlet{firstnamecolor}{color1}
 \colorlet{lastnamecolor}{color1}
 \colorlet{namecolor}{color1}
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
-% moderncv loads hyperref itself in an \AtEndPreamble hook, so \hypersetup
-% must go in an \AtEndPreamble of our own: on moderncv < 2.4 a top-level
-% \usepackage{hyperref} clashes with the class's own
-% \RequirePackage[unicode]{hyperref}. From 2.4.0 the class passes its options
-% through \PassOptionsToPackage instead, which is what removes that clash.
 \AtEndPreamble{\hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
-    % Keep pdfpagemode=UseNone: this block runs after moderncv's own
-    % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
-    % value here would win and open every CV in fullscreen presentation mode.
+    pdftitle={Sayed Johon - Master CV},
     pdfpagemode=UseNone,
 }}
-\usepackage[scale=0.80]{geometry}
+\usepackage[scale=0.82]{geometry}
 \usepackage{import}
 
-% personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+% Personal Data
+\name{Sayed}{Johon}
+\address{Dhaka, Bangladesh}{}{}
+\phone[mobile]{+880 1972 072408}
+\email{contact.sayedjohon@gmail.com}
+\extrainfo{
+  \href{https://linkedin.com/in/sayedjohon}{LinkedIn} ~|~ 
+  \href{https://github.com/junoisnowai}{GitHub} ~|~ 
+  \href{https://youtube.com/@JunoVerseAI}{YouTube} ~|~ 
+  \href{https://junoverseai.com}{Portfolio}
+}
 
 \begin{document}
 
 \makecvtitle
 
 % ============================================================
-%     PROFILE STATEMENT
+%     EXECUTIVE SUMMARY
 % ============================================================
-
-\vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\section{Executive Profile}
+\textbf{AI Systems \& Automation Engineer} and multi-disciplinary operator with a proven track record of architecting autonomous agent pipelines, neural voice cloning clusters, enterprise RAG workflows, and media broadcasting systems. Founder of \textbf{MicTab} and \textbf{PeeAI}, and host of \textbf{JunoverseAI} on YouTube. Combines deep full-stack automation engineering (Python, n8n, Linux daemons, Docker, GCP) with high-impact communication, persuasion psychology, and rapid execution.
 
 % ============================================================
-%     CORE COMPETENCIES
+%     TECHNICAL & AUTOMATION ARSENAL
 % ============================================================
-
-\section{Core Competencies}
-\vspace{1pt}
-\begin{itemize}
-
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
-
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
-
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
-
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
-
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
-
+\section{Technical \& Engineering Arsenal}
+\begin{itemize}[leftmargin=1.5em]
+  \item \textbf{AI \& Multi-Agent Frameworks:} Agentic Systems (Claude Code, Antigravity, Hermes), Google Vertex AI (Gemini 3.7 Flash, Nano Banana 2), OpenAI APIs, Groq Whisper Large v3, RAG Architectures, Vector Embeddings.
+  \item \textbf{Workflow \& Process Automation:} Advanced n8n Orchestration, Webhook Gateways, Headless Playwright Daemons, OpenCLI Session Scraping, Automated Social CRM Pipelines.
+  \item \textbf{DevOps \& Systems Architecture:} Linux (Ubuntu 22.04 LTS), 24/7 Systemd Background Daemons, Docker, Google Cloud Run, Cloud Build, 10-Account GPU Swarms, Tailscale Mesh VPN.
+  \item \textbf{Languages \& Core Tech:} Python (FastAPI, Asyncio), JavaScript/TypeScript (Node.js, Bun), Bash Scripting, HTML5/CSS3, SQL.
+  \item \textbf{Media \& Content Engine:} On-Camera Technical Hosting (Fluent English), Audio Engineering (-14 LUFS Broadcast Standards), Neural Voice Cloning (OmniVoice), Video Editing \& Motion Graphics.
 \end{itemize}
 
 % ============================================================
-%     PROFESSIONAL EXPERIENCE
+%     VENTURES & EXPERIENCE
 % ============================================================
+\section{Venture & Engineering Experience}
 
-\section{Professional Experience}
-\vspace{3pt}
-\begin{itemize}
-
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
-\begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
-\end{itemize}}}
-
-\vspace{3pt}
-
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
-\begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-\end{itemize}}}
-
-\vspace{3pt}
-
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
-\begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-\end{itemize}}}
-
+\cventry{2024 -- Present}{Founder \& Lead AI Architect}{JunoverseAI \& MicTab Platforms}{Dhaka, Bangladesh}{}{
+\begin{itemize}[leftmargin=1.5em]
+  \item \textbf{JARVIS Autonomous Media OS:} Designed and deployed an automated dual-wave video compilation and multi-platform distribution engine leveraging Playwright motion screen capture, Vertex AI Nano Banana 2 thumbnail rendering, and automated publishing to YouTube, LinkedIn, and \textsl{X}.
+  \item \textbf{OmniVoice Neural TTS Swarm:} Architected a serverless voice cloning gateway with scale-to-zero GCP Cloud Run endpoints and a 10-account Google Colab GPU cluster (160GB total VRAM) with automated failover logic.
+  \item \textbf{Enterprise Workflow Automation:} Built full-scale RAG and automation systems using n8n and FastAPI, cutting manual operational turnaround times by over 80\%.
+  \item \textbf{Live Platform Development:} Engineered and shipped \textbf{PeeAI.com} (learning acceleration) and \textbf{MicTab.com} (all-in-one software ecosystem).
 \end{itemize}
+}
 
-% ============================================================
-%     EDUCATION
-% ============================================================
-
-\section{Education}
-\vspace{1pt}
-\begin{itemize}
-
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
-
-\vspace{3pt}
-
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
-
+\cventry{2024 -- Present}{Host \& Technical Creator}{JunoverseAI YouTube Channel}{Dhaka, Bangladesh}{}{
+\begin{itemize}[leftmargin=1.5em]
+  \item Scripted, produced, and hosted in-depth technical deep-dives on bleeding-edge AI models, autonomous agents, and software tools in fluent English.
+  \item Mastered audience retention mechanics, hook design, and high-CTR visual framing, driving organic engagement and subscriber loyalty.
 \end{itemize}
+}
 
 % ============================================================
-%     LANGUAGES
+%     EDUCATION & ACADEMIC DETAILS
 % ============================================================
-
-\section{Languages}
-\vspace{1pt}
-\begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
+\section{Education & Credentials}
+\cventry{}{Academic Background}{Hamim Ahmed (Legal / Academic Record)}{Dhaka, Bangladesh}{}{
+\begin{itemize}[leftmargin=1.5em]
+  \item Self-directed focus on bleeding-edge computational systems, automation engineering, and AI agent architectures.
 \end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
-\end{itemize}
-
-% ============================================================
-%     REFERENCES
-% ============================================================
-
-\section{References}
-\vspace{1pt}
-\begin{itemize}
-\item{Available upon request.}
-\end{itemize}
+}
 
 \end{document}
